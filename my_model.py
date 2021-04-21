@@ -54,8 +54,7 @@ print(history.history.keys())
 
 predicted_values = my_model.predict(feature_test_scaled)
 print(r2_score(labels_test,predicted_values))
-# Do extensions code below
-# if you decide to do the Matplotlib extension, you must save your plot in the directory by uncommenting the line of code below
+
 fig = plt.figure()
 ax1 = fig.add_subplot(2,1,1)
 ax1.plot(history.history['mae'])
